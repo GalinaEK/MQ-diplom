@@ -1,0 +1,964 @@
+* {
+  margin: 0;
+  padding: 0;
+   border: 0;
+}
+
+@font-face {
+font-family: "OpenSans";
+src: url(C:/Users/Galya/Desktop/MQ-diplom/fonts/OpenSans-Regular.woff);
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: "OpenSans";
+src: url(C:/Users/Galya/Desktop/MQ-diplom/fonts/OpenSans-Bold.woff);
+font-weight: 700;
+font-style: normal;
+}
+
+.welcome {  
+  padding: 35px 0;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;    
+  position: relative;
+  z-index: 0;
+  }
+
+.welcome::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #1a1a1a;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 1;  
+}
+
+.container {  
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.container {  
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  }
+
+.header-logo {
+  width: 180px;
+  margin-left: 15px;
+    z-index: 1; 
+}
+
+.menu {
+  margin-top: 10px;
+  z-index: 1;
+  display: flex;
+  margin-right: 15px;
+   }
+
+.menu-list-item:nth-child(n+2) {
+  margin-left: 35px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    font-size: 13px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+  
+ a:hover {
+    color: #ffffff; 
+    text-decoration: underline; 
+    cursor: pointer;  
+}
+  
+
+  
+.welcome-title {
+  font-size: 45px;
+  color: #ffffff;
+  font-family: "OpenSans";
+  line-height: 75px;
+  font-style: bold; 
+  width: 690px;
+  margin-top: 130px;
+  margin-bottom: 145px;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase; 
+    text-align: center;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.trends {
+  display: flex;
+  margin: auto;
+}
+
+.trends-now {  
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 63px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.trends-now::after {
+ content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  opacity: 0.4;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px; 
+}
+
+.trends-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.trends-item {
+  width: calc(25% - 4px);
+  min-height: 320px;
+  position: relative;
+  z-index: 0;  
+}
+
+.trends-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #1a1a1a;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 1; 
+}
+
+.trends-item:nth-child(-n + 3) {
+  margin-right: 4px;
+}
+
+.fon-garden {
+  width: 100%;
+  min-height: 320px;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;    
+  position: relative;
+  z-index: 0;
+}
+
+.fon-cheese {
+  width: 100%;
+  min-height: 320px;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/images/trend2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;    
+  position: relative;
+  z-index: 0;
+}
+
+.fon-mountains {
+width: 100%;
+  min-height: 320px;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/images/trend3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;    
+  position: relative;
+  z-index: 0;
+}
+
+.fon-lemons {
+  width: 100%;
+  min-height: 320px;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/images/trend4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;    
+  position: relative;
+  z-index: 0;
+}
+
+.trends-border {
+  width: calc(90% - 3px);
+  min-height: 146px;
+  border: 3px solid #b59f5b;
+  box-sizing: border-box;
+  padding: 8% 10% 11% 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: absolute;
+   bottom: 15px;
+  z-index: 1;
+}
+
+.trend-name a {
+font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 12pt;
+  padding: 0;
+}
+
+.aside-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.articles {
+  width: 780px;
+  display: block; 
+  text-align: left;
+}
+
+.block-pic-text {
+  display: flex; 
+ }
+
+.articles {
+ margin-top: 60px;
+}
+
+.man-so-far {
+  width: 100%;
+  margin: 0 30px 0 15px;
+}
+
+.content-box {
+  width: 370px;
+ }
+
+.menu-list-upper:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.link-travel {
+   font-size: 14px;
+  color: #b59f5b;
+  font-family: "OpenSans";
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link-health {
+  font-size: 14px;
+  color: #b59f5b;
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;  
+  text-transform: uppercase;
+}
+
+a {
+    color: #0f0d0e;
+    text-decoration: none;
+}
+
+.card-name {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 14pt;
+  padding: 0 0 35px 0;
+}
+
+.card-date {
+  margin: 0 0 55px 0;
+  display: flex;
+  font-size: 12px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #888888;
+  padding: 0 15px 0 0;
+  }
+
+.signature {
+  margin-left: 15px; 
+    font-size: 12px;
+  font-family: "OpenSans";  
+  font-weight: bold;
+  color: #000000;  
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #0f0d0e;
+  font-family: "OpenSans";  
+  font-weight: normal;
+ padding: 0 0 17px 0; 
+}
+
+.aside-container {
+  width: 270px;
+  margin-left: 120px;  
+  margin-right: 15px;
+}
+
+.aside-title {
+  font-size: 14px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+ }
+
+.aside-title::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  opacity: 0.4;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.section-news {
+  margin-top: 60px;
+}
+
+.card-news-small {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.man-sofar-small {
+  width: 70px;
+    margin: 0 15px 0 0;
+}
+
+.card-body {
+  box-sizing: content-box;
+}
+
+.card-date-small { 
+  font-size: 12px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #888888;  
+}
+
+.card-name-small {
+  font-size: 14px;
+  line-height: 18px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px 0 0 0;
+  }
+
+.search {
+  margin: 60px 0 60px 0;
+}
+
+.search-form {
+  display: flex; 
+  background: #f4f7f6;    
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.field {
+  width: 220px;
+  border: 0;
+  padding: 17px 15px ;
+  background: #f4f7f6;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background: #b59f5b;
+  border: 0;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/search.svg);
+  background-repeat: no-repeat; 
+  background-size: 19px 19px;
+  background-position: center center;  
+  }
+
+
+.email-form {
+   margin: 25px 0 20px 0;
+  }
+
+.email-field {
+  height: 50px;
+  background: #f4f7f6;
+  width: 100%;
+  border: 0;
+  padding: 17px 15px ;
+  background: #f4f7f6;
+  box-sizing: border-box;
+  margin-bottom: 18px; 
+}
+
+.email-field:focus {
+  outline-color: #b59f5b; 
+}
+
+.button-subscribe {
+  width: 100%;
+  height: 50px;
+  background: #b59f5b;
+  font-size: 14px;  
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.subscribe {
+  color: #ffffff;
+}
+
+.button-subscribe:hover {
+  background: #323232;
+}
+
+.tags {
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.tags-block {
+  display: flex;
+  flex-wrap: wrap; 
+}  
+
+.tags-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+
+.tags-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f0d0e;
+  border: 3px solid #f4f3f1;
+  padding: 7px 13px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  display: inline-block;  
+  }
+
+.tags-link:hover {
+  border-color: #b59f5b;
+  color: #0f0d0e;
+  text-decoration: none;
+}
+
+.tags-link:nth-child(3) {
+  margin-right: 0;
+}
+
+.topic {
+  margin-top: 60px;
+}
+
+.topic-list-item {
+  text-decoration: none;
+    text-transform: none;
+    font-family:"OpenSans";
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f0d0e;
+  list-style: none;
+}
+
+.topic-link {
+  display: block;
+  box-sizing: border-box;
+  min-height: 47px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+  padding: 20px 0 15px 0;  
+}
+
+.topic-link:hover {
+  color: #b59f5b;
+  text-decoration: none;
+    text-transform: none;
+    font-family: "OpenSans";
+    font-weight: bold;
+   font-size: 14px;
+}
+
+span {
+  font-family: "OpenSans";
+    font-size: 12px;
+    font-weight: bold;
+    color: #b59f5b;  
+}
+
+.goods {
+  max-width: 1170px;
+  min-height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.goods-container {
+  width: calc(100%/3 - 44px);
+  min-height: 440px;
+}
+
+.goods-container:nth-child(-n+2) {
+  margin-right: 2.75%;  
+}
+
+.goods-container:nth-child(n+2) {
+  margin-left: 2.75%;
+}
+
+.product-imgbox {
+  width: 86%;
+  min-height: 203px;
+  margin-left: 7%;
+  margin-right: 7%;
+  position: relative;
+  z-index: 0;
+}
+
+.product-body {
+  width: 100%;
+  min-height: 265px;
+  border: 3px solid #b59f5b;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.product-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-family: "OpenSans";
+  font-weight: bold;
+  text-decoration: none;    
+  padding: 55px 20px 15px 20px;
+}
+
+.product-description a {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.product-description a:hover {
+  color: #b59f5b;
+  text-decoration: underline;
+}
+
+.product-description {
+  font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-family: "OpenSans";
+    font-weight: normal;
+    padding: 0 20px 17px 20px;
+}
+
+.product-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.product-price-new {
+  font-size: 20px;
+    font-weight: 700;
+    font-family: "OpenSans";
+    text-decoration: none;
+    color: #0f0d0e;
+    display: flex;
+    padding-left: 20px;
+     }
+
+
+.product-price-old {
+  font-size: 14px;
+  font-family: "OpenSans";
+  font-weight: 700;
+  color: #0f0d0e;
+  text-decoration: line-through;  
+  padding-left: 20px;
+  margin-bottom: 4px;
+  display: flex;
+  }
+
+  .product-rub-new {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "OpenSans";
+    text-decoration: none;
+    color: #0f0d0e;
+    margin-left: 0.2em;
+}
+
+.product-rub-old {
+  font-size: 14px;
+  font-family: "OpenSans";
+  font-weight: 700;
+  color: #0f0d0e; 
+  text-decoration: line-through; 
+  margin-bottom: 4px;
+  margin-left: 0.2em;
+  }
+
+.product-button {
+  width: 140px;
+  min-height: 50px;
+    background-color: #b59f5b;
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 7.5%;
+}
+
+.product-button:hover {
+  background-color: #323232;
+}
+
+.product-price-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f0d0e;
+  line-height: 1;
+  display: flex;
+}
+
+.product-price-val {
+ font-size: 14px;
+  font-weight: 700;
+  color: #0f0d0e;
+  line-height: 1;
+  display: flex; 
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+ margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  margin-bottom: 73px;
+  background: #f4f7f6;  
+ padding: 30px 0;
+  width: 1170px;
+}
+
+
+.icones-list-item {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0 30px 0 0;
+  }
+
+
+.social-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center; 
+}
+
+.social-icon-dribbble {
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/001-dribbble.svg);
+}
+
+.social-icon-pinterest {
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/002-pinterest.svg);  
+}
+
+.social-icon-tumblr {
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/003-tumblr.svg);
+  }
+
+h6 {
+  width: 1170px;  
+  text-align: center;
+ }
+
+.copyright {  
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;  
+   text-decoration: none;
+    text-transform: none;
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+}
+
+.popup {
+  width: 300px;
+    padding: 20px;
+    border: 1px solid #cbd1d4;
+    margin-left: auto;
+    margin-right: auto; 
+    overflow: hidden;
+    margin-top: 40px;
+    /*position: fixed;
+    display: none; */
+  }
+
+.form {
+  display: block;
+  margin-top: 0em;
+}
+
+.form-group:nth-child(n+2) {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.select-group {
+  margin-bottom: 20px;
+}
+
+.select-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #000000;
+    }
+
+.option {
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  }
+
+.select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  
+  padding-left: 10px;
+  padding-right: 25px;
+  
+  background-color: #f4f7f6;
+  
+  font-size: 13px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #000000;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 15px; 
+}
+
+.radio-group-text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+
+  width: 20px;
+  height: 20px;
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/form-empty-circle.svg);
+  background-repeat: no-repeat; 
+  background-size: 20px;
+  background-position: center center;  
+  }
+
+.radio-group-text {
+  font-size: 13px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #000000;
+}
+
+.radio-group {
+  display: inline-block;
+  font-size: 13px;  
+}
+
+.radio-group:nth-of-type(n+2) {
+  margin-left: 15px;
+}
+
+.radio:checked ~ .radio-group-text::before {
+  background-image: url(C:/Users/Galya/Desktop/MQ-diplom/SVG/form-circle.svg);
+  background-repeat: no-repeat; 
+  background-size: 20px;
+  background-position: center center;  
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+} 
+
+.textarea {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100px;
+  max-height; 250px;
+  font-size: 13px;
+  font-family: "OpenSans";  
+  font-weight: normal;
+  color: #000000;
+}
+
+.trends-popup {  
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  text-transform: uppercase;  
+  font-family: "OpenSans";  
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.trends-popup::after {
+ content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  opacity: 0.4;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px; 
+}
+
+.popup__close {
+  width: 1.4em;
+  height: 1em;
+  font-size: 20px;
+
+  position: absolute;
+  top: 1.5em;
+  right: -1.5em;  
+  color: #cccccc;
+}
+
+.popup__close::after {
+    transform: translate(-50%, -50%)
+    }
+
+.popup-close::before, .popup-close::after {
+  width: 1.4em;
+  height: 0.2em;
+  content: "";
+    background-color: #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
